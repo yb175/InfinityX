@@ -76,7 +76,7 @@ if (window.location.pathname.endsWith('destinations.html')) {
                 let num = Number(form.elements['num'].value);
                 localStorage.setItem('cost', (cost += planet_price[planet] * num));
                 localStorage.setItem('planet',planet);
-                window.location.href = "../Adds_On/invoice.html";
+                window.location.href = "/Adds_On/invoice.html";
            })
         }
     })
