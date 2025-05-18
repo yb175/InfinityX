@@ -62,7 +62,7 @@ let planet_price={
         europa: 5000
 }
 let cost = Number(localStorage.getItem('cost')) || 0;;
-if (window.location.pathname.includes('destinations.html')) {
+if (window.location.pathname.endsWith('destinations.html')) {
     let parent = document.getElementsByClassName('container')[0];
     parent.addEventListener('click',(event)=>{
         let clicked = event.target.closest('.box');
