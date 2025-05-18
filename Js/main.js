@@ -86,6 +86,7 @@ if (window.location.pathname.includes('index.html')) {
     let parent = document.getElementsByClassName('container')[0];
     parent.addEventListener('click',(event)=>{
         let clicked = event.target.closest('.box');
+        console.log('clicked');
         if (!clicked) return; // agar box pe click nahi hua to exit
         let vehicalCost = 0;
         if(clicked.id ==='FalconX'){
@@ -94,7 +95,6 @@ if (window.location.pathname.includes('index.html')) {
             localStorage.setItem('vehical',`${clicked.id}`);
             localStorage.setItem('cost',cost);
             window.location.href = "./Destination/destinations.html";
-            console.log('clicked');
         }
         else if(clicked.id == 'Starliner-5000'){
             cost+=30000;
