@@ -93,21 +93,22 @@ if (window.location.pathname.includes('index.html')) {
             cost+=10000;
             localStorage.setItem('vehical',`${clicked.id}`);
             localStorage.setItem('cost',cost);
-            window.location.href = "../Destination/destinations.html";
+            window.location.href = "./Destination/destinations.html";
+            console.log('clicked');
         }
         else if(clicked.id == 'Starliner-5000'){
             cost+=30000;
             localStorage.setItem('vehical',`${clicked.id}`);
             vehicalCost = 30000;
             localStorage.setItem('cost',cost);
-            window.location.href = "../Destination/destinations.html";
+            window.location.href = "./Destination/destinations.html";
         }
         else if(clicked.id == 'Nebula-Cruiser'){
             cost+=50000;
             localStorage.setItem('vehical',`${clicked.id}`);
             localStorage.setItem('cost',cost);
             vehicalCost = 50000;
-            window.location.href = "../Destination/destinations.html";
+            window.location.href = "./Destination/destinations.html";
         }
         localStorage.setItem('vehicalCst',vehicalCost);
     })
