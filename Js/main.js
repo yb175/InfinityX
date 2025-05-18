@@ -153,7 +153,7 @@ if(window.location.pathname.includes('invoice.html')){
     let home = document.getElementById('homeBtn');
     home.addEventListener('click',()=>{
         localStorage.setItem('cost',0);
-        window.location.href = "../vehicals/index.html";
+        window.location.href = "/index.html";
     })
 }
 
