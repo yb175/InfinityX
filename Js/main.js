@@ -82,7 +82,7 @@ if (window.location.pathname.includes('destinations.html')) {
     })
 }
 
-if (window.location.pathname.includes('index.html')) {
+if (window.location.pathname === '/'  || window.location.pathname.includes('index.html')) {
     let parent = document.getElementsByClassName('container')[0];
     parent.addEventListener('click',(event)=>{
         let clicked = event.target.closest('.box');
